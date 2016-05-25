@@ -441,7 +441,4 @@
         <item>com.google.android.apps.tycho</item>
     </string-array>    
 
-    <!-- BatteryLED fast charge -->
-    <integer name="config_chargingFastThreshold">1300000</integer>
-
 </resources>
