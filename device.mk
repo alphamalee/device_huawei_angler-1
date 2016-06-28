@@ -357,7 +357,7 @@ PRODUCT_PACKAGES += \
 # limit dex2oat threads to improve thermals
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.boot-dex2oat-threads=6 \
-    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.dex2oat-threads=8 \
     dalvik.vm.image-dex2oat-threads=6
 
 # old-apns.conf
@@ -402,15 +402,6 @@ ro.facelock.rec_timeout=2500 \
 ro.facelock.lively_timeout=2500 \
 ro.facelock.est_max_time=600 \
 ro.facelock.use_intro_anim=false
-
-# facelock properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.facelock.black_timeout=400 \
-    ro.facelock.det_timeout=1500 \
-    ro.facelock.rec_timeout=2500 \
-    ro.facelock.lively_timeout=2500 \
-    ro.facelock.est_max_time=600 \
-    ro.facelock.use_intro_anim=false
 
 # Enable B service adj transition
 PRODUCT_PROPERTY_OVERRIDES += \
